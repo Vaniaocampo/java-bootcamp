@@ -2,7 +2,7 @@ package javatest;
 /**
  * @author vania
  */
-public class JavaTest {
+public class JavaTest { //save as JavaTest.java
 
     /**
      * @param args the command line arguments
