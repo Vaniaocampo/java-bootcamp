@@ -3,7 +3,7 @@ import java.util.Date;
 /**
  * @author vania
  */
-public class TestSingleton {
+public class TestSingleton { // Demo Singleton
   
     
     public static void main (String[] args) {
@@ -13,20 +13,20 @@ public class TestSingleton {
         int numeroFactura;
         Date fechaGeneracion;
         Factura factura;
-        numeroFactura = NumeroFactura.getInstancia().mostrarUltimoNumeroFactura();
+        numeroFactura = NumeroFactura.getInstance().mostrarUltimoNumeroFactura();
         fechaGeneracion = new Date();
         factura = new Factura(numeroFactura, fechaGeneracion);
-        NumeroFactura.getInstancia().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
+        NumeroFactura.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
         System.out.println(factura.toString()); 
         
         System.out.println("Generando segunda Factura....."); 
         int numero;
         Date fecha;
         Factura factura2;
-        numero = NumeroFactura.getInstancia().mostrarUltimoNumeroFactura();
+        numero = NumeroFactura.getInstance().mostrarUltimoNumeroFactura();
         fecha = new Date();
         factura2 = new Factura(numero, fecha);
-        NumeroFactura.getInstancia().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
+        NumeroFactura.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
         System.out.println(factura2.toString()); 
     }
     
