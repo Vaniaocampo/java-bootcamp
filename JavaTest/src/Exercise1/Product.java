@@ -3,12 +3,12 @@ package Exercise1;
 /**
  * @author vania
  */
-public class Producto { //Save as Producto.java 
+public class Product { //Save as Producto.java 
     private int codigo;
     private String nombre;
     private double precio;
     
-    public Producto(){ 
+    public Product(){ 
     }
     public String getNombre(){
         return nombre;

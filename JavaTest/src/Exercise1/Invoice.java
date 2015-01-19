@@ -3,16 +3,16 @@ import java.util.Date;
 /**
  * @author vania 
  */
-public class Factura {
+public class Invoice {
     
     private int numero;
-    private TipoPago tipoPago;
+    private PaymentType tipoPago;
     private Date fechaGeneracion;
    
     
-    public Factura(){}
+    public Invoice(){}
     
-    public Factura( int nroFactura, Date fechaGeneracion){
+    public Invoice( int nroFactura, Date fechaGeneracion){
         
         numero=nroFactura;
         this.fechaGeneracion=fechaGeneracion;

@@ -1,14 +1,11 @@
 package Exercise1;
 
-/**
- * @author vania
- */
-
-public class TipoPago {
+public class PaymentType {
+    
     private String nombre;
     private String descripcion;
-    
-    public TipoPago(){
+   
+    public void PaymentType(){
     }
     
     public String getNombre(){
@@ -18,13 +15,11 @@ public class TipoPago {
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    
-    @Override
+   
     public String toString(){
         String aux="";
-        aux+= "Tipo de pago: "+nombre+"\nDescripcion: "+descripcion;
+        aux+= "Forma de pago: "+nombre+"\nDescripción: "+descripcion;
         return aux;
     }
-    
 }
 
