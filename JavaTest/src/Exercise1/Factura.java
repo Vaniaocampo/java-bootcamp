@@ -1,5 +1,4 @@
 package Exercise1;
-
 import java.util.Date;
 /**
  * @author vania 
