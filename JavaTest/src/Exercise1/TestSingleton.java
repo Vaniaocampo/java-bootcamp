@@ -12,21 +12,21 @@ public class TestSingleton { // Demo Singleton
         System.out.println("Generando nueva Factura....."); 
         int numeroFactura;
         Date fechaGeneracion;
-        Factura factura;
-        numeroFactura = NumeroFactura.getInstance().mostrarUltimoNumeroFactura();
+        Invoice factura;
+        numeroFactura = InvoiceNumber.getInstance().mostrarUltimoNumeroFactura();
         fechaGeneracion = new Date();
-        factura = new Factura(numeroFactura, fechaGeneracion);
-        NumeroFactura.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
+        factura = new Invoice(numeroFactura, fechaGeneracion);
+        InvoiceNumber.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
         System.out.println(factura.toString()); 
         
         System.out.println("Generando segunda Factura....."); 
         int numero;
         Date fecha;
-        Factura factura2;
-        numero = NumeroFactura.getInstance().mostrarUltimoNumeroFactura();
+        Invoice factura2;
+        numero = InvoiceNumber.getInstance().mostrarUltimoNumeroFactura();
         fecha = new Date();
-        factura2 = new Factura(numero, fecha);
-        NumeroFactura.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
+        factura2 = new Invoice(numero, fecha);
+        InvoiceNumber.getInstance().tomarUltimoNumeroFactura(numeroFactura+1);// incrementa en uno el numero de Factura y actualiza en el Singleton el ultimo numero de Factura
         System.out.println(factura2.toString()); 
     }
     
