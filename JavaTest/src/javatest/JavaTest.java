@@ -2,13 +2,14 @@ package javatest;
 /**
  * @author vania
  */
-public class JavaTest { //save as JavaTest.java
+
+public class JavaTest { 
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        System.out.println("Hello World!");
         System.out.println("Version 1.2");
     }
     

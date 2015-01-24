@@ -1,4 +1,5 @@
 package Exercise1;
+import java.util.ArrayList;
 /**
  * Create a ShoppingCart where a user can buy different items and then decide
  * how pay them:
@@ -8,15 +9,11 @@ package Exercise1;
  * Design Pattern: Strategy pattern
  * Reason: We found an action (calculate discount according to the type of
  * payment) that can be done in different ways.
- * 
  * @author vania
  */
 
-public class IEstDiscountCalculation {
+public interface IEstDiscountCalculation {
     
-    public IEstDiscountCalculation(){}
-    public double calculateDiscount(){
-        return 0.0;
-    }
+    public double calculateDiscount(ArrayList<OrderDetail> orderDetails);
     
 }

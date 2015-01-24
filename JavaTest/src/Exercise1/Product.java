@@ -1,39 +1,45 @@
 package Exercise1;
-
 /**
  * @author vania
  */
-public class Product { //Save as Producto.java 
+
+public class Product { //Save as Product.java 
     private int codigo;
     private String nombre;
     private double precio;
     
     public Product(){ 
     }
+    public Product(int codigo, String nombre, double precio){
+        
+        this.codigo=codigo;
+        this.nombre=nombre;
+        this.precio=precio;
+    }
+    
+    public int getCodigo(){
+        return codigo;
+    }
+    public void setCodigo(int codigo){
+        this.codigo=codigo;
+    }
     public String getNombre(){
         return nombre;
     }
-    
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    
     public double getPrecio(){
         return precio;
     }
-    
     public void setPrecio(double precio){
         this.precio = precio; 
     }
     
     @Override
     public String toString(){
-        
         String aux ="";
-        aux+= "\nNombre de producto: "+nombre;
-        aux+= "\nCódigo de productor:" + codigo;
-        aux+= "\nPrecio unitario: "+ precio;
+        aux+= "\nNombre: "+nombre+" Precio: $"+precio;
         return aux;
     }
-    
 }
