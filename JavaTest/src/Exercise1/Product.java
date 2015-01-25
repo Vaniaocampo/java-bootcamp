@@ -4,20 +4,20 @@ package Exercise1;
  */
 
 public class Product { //Save as Product.java 
-    private int codigo;
+    private long codigo;
     private String nombre;
     private double precio;
     
     public Product(){ 
     }
-    public Product(int codigo, String nombre, double precio){
+    public Product(long codigo, String nombre, double precio){
         
         this.codigo=codigo;
         this.nombre=nombre;
         this.precio=precio;
     }
     
-    public int getCodigo(){
+    public long getCodigo(){
         return codigo;
     }
     public void setCodigo(int codigo){
